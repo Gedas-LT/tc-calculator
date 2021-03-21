@@ -41,14 +41,17 @@ class Calculator:
             return result
 
     def divide(self, a: int, b: int = None) -> float:
-        if b == None:
-            result = self.__memory / a
-            self.__memory = result
-            return result
-        else:
-            result = a / b
-            self.__memory = result
-            return result
+        try:
+            if b == None:
+                result = self.__memory / a
+                self.__memory = result
+                return result
+            else:
+                result = a / b
+                self.__memory = result
+                return result
+        except ZeroDivisionError:
+            print("You cannot divide by zero!")
 
     def root(self, root: int, num: int = None) -> float:
         if num == None:
@@ -63,14 +66,5 @@ class Calculator:
 
 cal = Calculator()
 
-print("Result:", cal.subtract(10, 7))
-print("Memory:", cal.memory)
-cal.memory_reset()
-print("Memory:", cal.memory)
-print("Result:", cal.multiplicate(3, 5))
-print("Memory:", cal.memory)
-cal.memory_reset()
-print("Memory:", cal.memory)
-#print("Result:", cal.divide(10, 4))
-#print("Result:", cal.root(3, 8))
-#print("Memory:", cal.memory)
+
+cal.divide(10, 0)
