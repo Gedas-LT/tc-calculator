@@ -5,3 +5,5 @@ RUN  apt-get update \
   && rm -rf /var/lib/apt/lists/*
  
 RUN wget https://github.com/Gedas-LT/tc-calculator
+
+RUN pip install pytest
