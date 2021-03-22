@@ -5,7 +5,7 @@
 * [License](#license)
 
 ## General info
-In this lesson's final exercise you will need to port the Tesla factory code from notebook cell to a `.py` file and write tests to it. You will also need to complete initialization of project by creating `README` file. You will also need to generate and add MIT license to your project.
+The package of calculator module which has basic mathematical operations: addition / subtraction, multiplication / divisiona, and nth root of number. Also calculator has its own memory. 
 
 ## Tasks
 * Create a GitHub repository.
@@ -17,8 +17,7 @@ In this lesson's final exercise you will need to port the Tesla factory code fro
 ## Instalation
 Install package directly from GitHub:
 ```
-pip install https://github.com/Gedas-LT/tc-calculator
-}
+pip install git+https://github.com/Gedas-LT/tc-calculator
 ```
 
 ## License
