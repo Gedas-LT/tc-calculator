@@ -4,7 +4,7 @@
 * [License](#license)
 
 ## General info
-Python package of calculator module which has basic mathematical operations: addition / subtraction, multiplication / division, and (nth) root of number. Also calculator has its own memory. 
+Python package of calculator module which has basic mathematical operations for integer numbers: addition / subtraction, multiplication / division, and (nth) root of number. Also calculator has its own memory. 
 
 ## Instalation
 Install package directly from GitHub:
